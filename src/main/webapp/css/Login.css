@@ -1,0 +1,70 @@
+/* Archivo: Login.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../IMAGES/fondologin.jpg') no-repeat center center fixed; /* Ruta de la imagen */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h2 {
+    color: #fff; /* Cambiado para que sea visible sobre la imagen de fondo */
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333; /* Cambiado para mejor contraste */
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+.agregar {
+    background-color: #0275d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #025aa5;
+}

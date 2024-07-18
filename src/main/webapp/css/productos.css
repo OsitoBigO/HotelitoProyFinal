@@ -1,0 +1,163 @@
+/* Estilo para la fila que contiene los productos */
+body {
+    font-family: arial,sans-serif;
+    margin-top: 0px;
+    padding: 0;
+    background-color: #f6f5f5;
+    
+}
+.row {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre filas de categorías */
+}
+
+/* Estilo para el título de categoría */
+h2 {
+    text-align: center;
+    width: 100%; /* Asegura que el título ocupe el ancho completo */
+}
+
+/* Estilo para el contenedor de productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Asegura que los productos ocupen el ancho completo */
+}
+
+/* Estilo para cada tarjeta de producto */
+.col-3 {
+    width: calc(25% - 20px); /* 25% del ancho de la pantalla con margen entre las tarjetas */
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 0.2s; /* Agrega una transición de transformación */
+}
+
+.card {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.card-text {
+    color: #333; /* Color del texto */
+    font-size: 12px;
+}
+.card-price {
+    font-size: 12px;
+    color: red; /* Color del precio */
+    font-weight: bold;
+}
+
+.product-image img {
+    width: 200px;
+    height: 200px;
+}
+
+.product-image {
+    max-height: 200px; /* Altura máxima de la imagen */
+    overflow: hidden; /* Ocultar el exceso de imagen */
+}
+
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Estilo para el botón "Agregar al carrito" */
+.btn-primary {
+    background-color: #8b0a1b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Efecto de sombra al pasar el cursor por encima de la tarjeta */
+.card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de escala al pasar el cursor por encima de la tarjeta */
+.col-3:hover {
+    transform: scale(1.05);
+}
+
+/*------------------------------------------------------------------------*/
+/* Estilo para el carrito */
+#carrito {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 5px; /* Agregar bordes redondeados al panel */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agregar una sombra suave */
+    width: 250px; /* Definir un ancho fijo para el panel */
+}
+
+/* Estilo para el título del carrito */
+#carrito h3 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #333; /* Cambiar el color de fondo del título */
+    color: #fff; /* Cambiar el color del texto del título */
+}
+
+/* Estilo para los elementos de la lista de productos en el carrito */
+#lista-productos {
+    list-style: none; /* Quitar los marcadores de lista */
+    padding: 0;
+}
+
+#lista-productos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos de la lista */
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Estilo para los botones del carrito */
+#ver-carrito,
+#vaciar-carrito {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #333; /* Cambiar el color de fondo del botón */
+    color: #fff; /* Cambiar el color del texto del botón */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Agregar bordes redondeados al botón */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agregar una transición de color al pasar el mouse */
+}
+
+#ver-carrito:hover,
+#vaciar-carrito:hover {
+    background-color: #555; /* Cambiar el color de fondo del botón al pasar el mouse */
+}

@@ -1,0 +1,48 @@
+/* Estilos para la tabla */
+.listadoMateriales {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Estilos para la tabla DataTables */
+#materialesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#materialesTable th, #materialesTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#materialesTable th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los botones de editar y eliminar */
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+}
